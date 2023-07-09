@@ -1,0 +1,553 @@
+.body{
+  background-image:linear-gradient(to bottom,#f3f7ff,rgb(255, 255, 255));
+
+}
+
+.nav-container{
+max-width: 1100px;
+margin:  0px auto;
+}
+
+@media screen and (max-width:1170px) {
+  .nav-container{
+    max-width: 992px;
+
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .nav-container{
+  padding: 0px 30px;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .nav-container{
+width: 100%;
+padding: 0px;
+  }
+}
+
+.firstnav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+@media screen and (max-width:992px) {
+  .firstnav{
+display: none;
+  }
+}
+
+.firstnav ul{
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+
+}
+
+.firstnav ul li{
+  padding: 10px 14px;
+}
+
+.firstnav ul li a{
+  text-decoration: none;
+  display: block;
+}
+
+.firstnavdrope{
+  display: none;
+
+}
+
+.firstnavdrop{
+  position: absolute;
+  left: 0;
+  top: 45px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 7px 30px -20px;
+  padding:50px;
+  border-top: 2px solid skyblue;
+  z-index: 999;
+}
+
+.firstnavdrop2{
+  position: absolute;
+  left: 700px;
+  top: 45px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 7px 30px -20px;
+  padding:50px;
+  border-top: 2px solid skyblue;
+  z-index: 999;
+}
+
+.firstnavdrop-content{
+  display: flex;
+  gap:10px;
+  width: 300px;
+  border-right: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  margin: 10px;
+}
+
+.firstnavdrop-content h1{
+  font-size: 20px;
+}
+
+.firstnav ul li:hover .firstnavdrope{
+  display: block;
+}
+
+
+/* the styling for the second navbar starts here */
+
+.secondnav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0px 10px;
+}
+
+@media screen and (max-width:992px) {
+  .secondnav{
+display: none;
+  }
+}
+
+.secondnav ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+
+.secondnav ul li{
+  padding:5px 14px;
+}
+
+.secondnav ul li a{
+  text-decoration: none;
+  color: #677788;
+}
+
+.active{
+  color: blue;
+}
+
+.secondnav button{
+  background-color:#377DFF;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 15px 19px;
+}
+
+#navboot{
+  display: none;
+}
+
+@media screen and (max-width:992px) {
+  #navboot{
+display: block;
+background-color:white;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .navbar-nav a{
+font-size: 30px;
+  }
+}
+
+
+@media screen and (max-width:992px) {
+  .navbar-toggler{
+font-size: 30px;
+  }
+}
+
+.main-content{
+  max-width: 1100px;
+  margin: 0px auto;
+}
+
+@media screen and (max-width:1170px) {
+  .main-content{
+  max-width: 992px;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .main-content{
+margin-top: 50px;
+  }
+}
+
+
+
+
+
+
+.header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top:100px ;
+}
+
+@media screen and (max-width:1000px) {
+  .header{
+flex-direction: column;
+padding: 0px 30px;
+margin-top: 0px;
+  }
+}
+/*
+@media screen and (max-width:1000px) {
+  .header img{
+width: 300px;
+  }
+} */
+
+
+
+.headerimage{
+  width: 50%;
+}
+
+
+@media screen and (max-width:992px) {
+  .headerimage{
+width: 100%;
+  }
+}
+
+  .headerimage img{
+    border-radius: 10px;
+  }
+
+.header-text {
+  width: 500px;
+  padding: 0px;
+}
+
+@media screen and (max-width:1000px) {
+  .header-text{
+width: 100%;
+text-align: center;
+  }
+}
+
+
+
+@media screen and (max-width:700px) {
+  .header-text{
+width: 100%;
+  }
+}
+
+.header-text h1{
+  font-weight:bold;
+  font-size: 55px;
+}
+
+
+@media screen and (max-width:700px) {
+  .header-text h1{
+font-size: 75px;
+padding: 0px;
+margin: 0px;
+  }
+}
+
+.header-text span{
+  color: #377DFF;
+}
+
+/* .header-text form{
+  position: absolute;
+} */
+
+.header-text input{
+  width:50%;
+  padding: 20px;
+  box-shadow: 0px 7px 30px -30px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 30px;
+}
+
+@media screen and (max-width:1000px) {
+  .header input{
+width: 500px;
+  }
+}
+
+@media screen and (max-width:700px) {
+.header-text input{
+width: 100%;
+  }
+}
+
+.header-text button{
+  padding: 12px 20px;
+  background-color: #0046df;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 20px;
+  right: 100px;
+}
+
+/* @media screen and (max-width:700px) {
+  .header button{
+display: none;
+  }
+} */
+
+
+.header-text button a{
+  color: white;
+  text-decoration: none;
+
+}
+
+.header-text p{
+  margin-top: 120px;
+  color: #677788;
+}
+
+@media screen and (max-width:992px) {
+  .header-text p{
+margin-top: 0;
+font-size: 30px;
+  }
+}
+
+
+
+.main2 h1{
+text-align: center;
+padding-top: 160px;
+font-size: 24px;
+}
+
+@media screen and (max-width:800px){
+.main2 h1{
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width:800px){
+.main2-content p{
+    font-size: 20px;
+  }
+}
+
+.main2-content{
+  display: flex;
+  justify-content: center;
+  gap:10px;
+}
+
+@media screen and (max-width:992px){
+.main2-content{
+    flex-wrap: wrap;
+  }
+}
+
+
+.house1,.house2,.house3,.house4,.house5,.house6{
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width:992px){
+  .house1,.house2,.house3,.house4,.house5,.house6{
+    width: 350px;
+  }
+}
+
+@media screen and (max-width:992px){
+  .house1,.house2,.house3,.house4,.house5,.house6{
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width:800px){
+  .house1,.house2,.house3,.house4,.house5,.house6{
+    height:700px;
+  }
+}
+
+.forsale{
+  padding-top: 10px;
+  color: gray;
+}
+
+.house1pic{
+  background-image: url("pics/house1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.house1pic button{
+  background-color: skyblue;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 7px;
+}
+
+
+.house1pic button a{
+  color: white;
+  text-decoration: none;
+}
+
+.house1-text{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: skyblue;
+}
+
+.house1-text a{
+  text-decoration: none;
+}
+.house2pic{
+  background-image: url("pics/house2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+
+.house3pic{
+  background-image: url("pics/house3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.house3pic button{
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 7px;
+}
+
+
+.house3pic button a{
+  color: white;
+  text-decoration: none;
+}
+
+.house4pic{
+  background-image: url("pics/house4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.house4pic button{
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 7px;
+}
+
+
+.house4pic button a{
+  color: white;
+  text-decoration: none;
+}
+
+
+.house5pic{
+  background-image: url("pics/house5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.house5pic button{
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 7px;
+}
+
+
+.house5pic button a{
+  color: white;
+  text-decoration: none;
+}
+
+
+.house6pic{
+  background-image: url("pics/house6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.house6pic button{
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 7px;
+}
+
+
+.house6pic button a{
+  color: white;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width:992px){
+  .house1pic,.house2pic,.house3pic,.house4pic,.house5pic,.house6pic{
+    width: 100%;
+    height:400px;
+  }
+}
+
+.icons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconse{
+  display: flex;
+  justify-content: space-around;
+  color: gray;
+}
+.iconse img{
+  padding-right: 5px;
+}
